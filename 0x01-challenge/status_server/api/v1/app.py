@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Web server 
+Web server
+Error
 """
 from api.v1.views import app_views
 from flask import Flask, jsonify, make_response
@@ -16,5 +17,6 @@ def not_found(error):
 
 
 if __name__ == "__main__":
+    """This is the main entry point"""
     # python -m api.v1.app 
     app.run(host="0.0.0.0", port=5000)
